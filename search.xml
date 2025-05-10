@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1.socket的监听与连接</title>
+    <url>/2025/05/10/1-socket-de-jian-ting-yu-lian-jie/</url>
+    <content><![CDATA[<h1><span id="1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</span><a href="#1-socket-de-jian-ting-yu-lian-jie" class="header-anchor">#</a></h1>]]></content>
+      <categories>
+        <category>技术</category>
+        <category>c++</category>
+        <category>网络编程</category>
+      </categories>
+      <tags>
+        <tag>网络编程</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hexo从GitHub上克隆到本地-恢复使用</title>
     <url>/2025/05/10/hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong/</url>
     <content><![CDATA[<div class="toc">
