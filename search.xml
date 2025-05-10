@@ -13,8 +13,8 @@
 <!-- tocstop -->
 
 </div>
-# 0.VS配置C++_bost库
-]]></content>
+
+<h1><span id="0-vs-pei-zhi-c-bost-ku">0.VS配置C++_bost库</span><a href="#0-vs-pei-zhi-c-bost-ku" class="header-anchor">#</a></h1>]]></content>
       <categories>
         <category>技术</category>
         <category>c++</category>
@@ -33,15 +33,22 @@
 <!-- toc -->
 
 <ul>
-<li><a href="#1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</a></li>
+<li><a href="#1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</a><ul>
+<li><a href="#wang-luo-bian-cheng-ji-ben-liu-cheng">网络编程基本流程</a><ul>
+<li><a href="#fu-wu-duan">服务端</a></li>
+<li><a href="#ke-hu-duan">客户端</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <!-- tocstop -->
 
 </div>
-# 1.socket的监听与连接
 
-
-]]></content>
+<h1><span id="1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</span><a href="#1-socket-de-jian-ting-yu-lian-jie" class="header-anchor">#</a></h1><h2><span id="wang-luo-bian-cheng-ji-ben-liu-cheng">网络编程基本流程</span><a href="#wang-luo-bian-cheng-ji-ben-liu-cheng" class="header-anchor">#</a></h2><h3><span id="fu-wu-duan">服务端</span><a href="#fu-wu-duan" class="header-anchor">#</a></h3><p>1）socket——创建socket对象。<br>2）bind——绑定本机ip+port。<br>3）listen——监听，若在监听到，则建立连接。<br>4）accept——再创建一个socket对象给其收发消息。原因是现实中服务端都是面对多个客户端，那么为了区分各个客户端，则每个客户端都需再分配一个socket对象进行收发消息。<br>5）read、write——就是收发消息了。</p>
+<h3><span id="ke-hu-duan">客户端</span><a href="#ke-hu-duan" class="header-anchor">#</a></h3><p>1）socket——创建socket对象。<br>2）connect——根据服务端ip+port，发起连接请求。<br>3）write、read——建立连接后，就可发收消息了。</p>
+<h2><span id></span><a href="#" class="header-anchor">#</a></h2>]]></content>
       <categories>
         <category>技术</category>
         <category>c++</category>
@@ -49,6 +56,33 @@
       </categories>
       <tags>
         <tag>网络编程</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>c++基础</title>
+    <url>/2025/05/10/c-ji-chu/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#c-ji-chu">c++基础</a><ul>
+<li><a href="#c">c</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h1><span id="c-ji-chu">c++基础</span><a href="#c-ji-chu" class="header-anchor">#</a></h1><h2><span id="c">c</span><a href="#c" class="header-anchor">#</a></h2>]]></content>
+      <categories>
+        <category>技术</category>
+        <category>c++</category>
+        <category>c++语法</category>
+      </categories>
+      <tags>
         <tag>c++</tag>
       </tags>
   </entry>
@@ -108,33 +142,6 @@
       <tags>
         <tag>github</tag>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>c++基础</title>
-    <url>/2025/05/10/c-ji-chu/</url>
-    <content><![CDATA[<div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#c-ji-chu">c++基础</a><ul>
-<li><a href="#c">c</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h1><span id="c-ji-chu">c++基础</span><a href="#c-ji-chu" class="header-anchor">#</a></h1><h2><span id="c">c</span><a href="#c" class="header-anchor">#</a></h2>]]></content>
-      <categories>
-        <category>技术</category>
-        <category>c++</category>
-        <category>c++语法</category>
-      </categories>
-      <tags>
-        <tag>c++</tag>
       </tags>
   </entry>
   <entry>
