@@ -1,6 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo从GitHub上克隆到本地-恢复使用</title>
+    <url>/2025/05/10/hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</a><ul>
+<li><a href="#yi-pei-zhi-huan-jing">一、配置环境</a></li>
+<li><a href="#er-pei-zhi-ben-di-bo-ke">二.配置本地博客</a></li>
+<li><a href="#san-sheng-cheng-bu-shu">三.生成、部署</a></li>
+<li><a href="#bei-fen">备份</a><ul>
+<li><a href="#ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di">克隆gitHub上面生成的静态文件到本地</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h1><span id="hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</span><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong" class="header-anchor">#</a></h1><h2><span id="yi-pei-zhi-huan-jing">一、配置环境</span><a href="#yi-pei-zhi-huan-jing" class="header-anchor">#</a></h2><p>1.安装git</p>
+<p><code>https://git-scm.com/downloads</code></p>
+<p>2.Git与远程库进行SSH授权(点击查看教程Git的安装-与远程仓库GitHub配置)</p>
+<p>3.安装node.js</p>
+<p><code>https://nodejs.org/en/</code> </p>
+<h2><span id="er-pei-zhi-ben-di-bo-ke">二.配置本地博客</span><a href="#er-pei-zhi-ben-di-bo-ke" class="header-anchor">#</a></h2><p>1.克隆GitHub上保存的hexo网站原文件</p>
+<p><code>git clone 你的仓库地址</code></p>
+<p>2.安装hexo</p>
+<p>进入克隆的目录，执行：</p>
+<p><code>npm install -g hexo-cli</code></p>
+<p>3.生成缺少的网站文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h2><span id="san-sheng-cheng-bu-shu">三.生成、部署</span><a href="#san-sheng-cheng-bu-shu" class="header-anchor">#</a></h2><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<h2><span id="bei-fen">备份</span><a href="#bei-fen" class="header-anchor">#</a></h2><h3><span id="ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di">克隆gitHub上面生成的静态文件到本地</span><a href="#ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di" class="header-anchor">#</a></h3><p><code>git clone https://github.com/你的用户名/你的用户名.github.io.git</code><br>把克隆到本地的文件除了git的文件都删掉</p>
+<p>将之前使用hexo写博客时候的整个目录（所有文件）搬过来。把该忽略的文件忽略了</p>
+<p><code>touch .gitignore</code><br>创建一个叫back的分支</p>
+<p><code>git checkout -b back</code><br>提交复制过来的文件到暂存区</p>
+<p><code>git add --all</code><br>提交</p>
+<p><code>git commit -m &quot;新建分支源文件&quot;</code><br>推送分支到github</p>
+<p><code>git push origin back</code><br>到这里基本上就搞定了，以后再推就可以直接git push了，hexo的操作跟以前一样。</p>
+<p>今后无论什么时候想要在其他电脑上面用hexo写博客，就直接把创建的分支克隆下来，npm install安装依赖之后就可以用了。</p>
+<p>克隆分支的操作</p>
+<p><code>git clone https://github.com/yourname/hexo-test.github.io.git</code></p>
+<p>这样做完了以后，每次写完博客发布之后git push把源文件推到分支上。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用hexo搭建个人博客</title>
     <url>/2025/05/09/shi-yong-hexo-da-jian-ge-ren-bo-ke/</url>
     <content><![CDATA[<div class="toc">
@@ -125,67 +183,9 @@
         <category>Hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>github</tag>
+        <tag>hexo</tag>
         <tag>博客</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo从GitHub上克隆到本地-恢复使用</title>
-    <url>/2025/05/10/hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong/</url>
-    <content><![CDATA[<div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</a><ul>
-<li><a href="#yi-pei-zhi-huan-jing">一、配置环境</a></li>
-<li><a href="#er-pei-zhi-ben-di-bo-ke">二.配置本地博客</a></li>
-<li><a href="#san-sheng-cheng-bu-shu">三.生成、部署</a></li>
-<li><a href="#bei-fen">备份</a><ul>
-<li><a href="#ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di">克隆gitHub上面生成的静态文件到本地</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-
-</div>
-
-<h1><span id="hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</span><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong" class="header-anchor">#</a></h1><h2><span id="yi-pei-zhi-huan-jing">一、配置环境</span><a href="#yi-pei-zhi-huan-jing" class="header-anchor">#</a></h2><p>1.安装git</p>
-<p><code>https://git-scm.com/downloads</code></p>
-<p>2.Git与远程库进行SSH授权(点击查看教程Git的安装-与远程仓库GitHub配置)</p>
-<p>3.安装node.js</p>
-<p><code>https://nodejs.org/en/</code> </p>
-<h2><span id="er-pei-zhi-ben-di-bo-ke">二.配置本地博客</span><a href="#er-pei-zhi-ben-di-bo-ke" class="header-anchor">#</a></h2><p>1.克隆GitHub上保存的hexo网站原文件</p>
-<p><code>git clone 你的仓库地址</code></p>
-<p>2.安装hexo</p>
-<p>进入克隆的目录，执行：</p>
-<p><code>npm install -g hexo-cli</code></p>
-<p>3.生成缺少的网站文件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-
-<h2><span id="san-sheng-cheng-bu-shu">三.生成、部署</span><a href="#san-sheng-cheng-bu-shu" class="header-anchor">#</a></h2><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-<h2><span id="bei-fen">备份</span><a href="#bei-fen" class="header-anchor">#</a></h2><h3><span id="ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di">克隆gitHub上面生成的静态文件到本地</span><a href="#ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di" class="header-anchor">#</a></h3><p><code>git clone https://github.com/你的用户名/你的用户名.github.io.git</code><br>把克隆到本地的文件除了git的文件都删掉</p>
-<p>将之前使用hexo写博客时候的整个目录（所有文件）搬过来。把该忽略的文件忽略了</p>
-<p><code>touch .gitignore</code><br>创建一个叫back的分支</p>
-<p><code>git checkout -b back</code><br>提交复制过来的文件到暂存区</p>
-<p><code>git add --all</code><br>提交</p>
-<p><code>git commit -m &quot;新建分支源文件&quot;</code><br>推送分支到github</p>
-<p><code>git push origin back</code><br>到这里基本上就搞定了，以后再推就可以直接git push了，hexo的操作跟以前一样。</p>
-<p>今后无论什么时候想要在其他电脑上面用hexo写博客，就直接把创建的分支克隆下来，npm install安装依赖之后就可以用了。</p>
-<p>克隆分支的操作</p>
-<p><code>git clone https://github.com/yourname/hexo-test.github.io.git</code></p>
-<p>这样做完了以后，每次写完博客发布之后git push把源文件推到分支上。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>github</tag>
       </tags>
   </entry>
 </search>
