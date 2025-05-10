@@ -1,126 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>hexo从GitHub上克隆到本地-恢复使用</title>
-      <link href="/2025/05/10/hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong/"/>
-      <url>/2025/05/10/hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong/</url>
-      
-        <content type="html"><![CDATA[<div class="toc"><!-- toc --><ul><li><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</a><ul><li><a href="#yi-pei-zhi-huan-jing">一、配置环境</a></li><li><a href="#er-pei-zhi-ben-di-bo-ke">二.配置本地博客</a></li><li><a href="#san-sheng-cheng-bu-shu">三.生成、部署</a></li></ul></li></ul><!-- tocstop --></div><h1><span id="hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</span><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong" class="header-anchor">#</a></h1><h2><span id="yi-pei-zhi-huan-jing">一、配置环境</span><a href="#yi-pei-zhi-huan-jing" class="header-anchor">#</a></h2><p>1.安装git</p><p><code>https://git-scm.com/downloads</code></p><p>2.Git与远程库进行SSH授权(点击查看教程Git的安装-与远程仓库GitHub配置)</p><p>3.安装node.js</p><p><code>https://nodejs.org/en/</code> </p><h2><span id="er-pei-zhi-ben-di-bo-ke">二.配置本地博客</span><a href="#er-pei-zhi-ben-di-bo-ke" class="header-anchor">#</a></h2><p>1.克隆GitHub上保存的hexo网站原文件</p><p><code>git clone 你的仓库地址</code></p><p>2.安装hexo</p><p>进入克隆的目录，执行：</p><p><code>npm install -g hexo-cli</code></p><p>3.生成缺少的网站文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h2><span id="san-sheng-cheng-bu-shu">三.生成、部署</span><a href="#san-sheng-cheng-bu-shu" class="header-anchor">#</a></h2><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/05/09/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2><span id="quick-start">Quick Start</span><a href="#quick-start" class="header-anchor">#</a></h2><h3><span id="create-a-new-post">Create a new post</span><a href="#create-a-new-post" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3><span id="run-server">Run server</span><a href="#run-server" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3><span id="generate-static-files">Generate static files</span><a href="#generate-static-files" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span><a href="#deploy-to-remote-sites" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo从GitHub上克隆到本地-恢复使用</title>
+    <url>/2025/05/10/hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</a><ul>
+<li><a href="#yi-pei-zhi-huan-jing">一、配置环境</a></li>
+<li><a href="#er-pei-zhi-ben-di-bo-ke">二.配置本地博客</a></li>
+<li><a href="#san-sheng-cheng-bu-shu">三.生成、部署</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h1><span id="hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong">hexo从GitHub上克隆到本地-恢复使用</span><a href="#hexo-cong-github-shang-ke-long-dao-ben-di-hui-fu-shi-yong" class="header-anchor">#</a></h1><h2><span id="yi-pei-zhi-huan-jing">一、配置环境</span><a href="#yi-pei-zhi-huan-jing" class="header-anchor">#</a></h2><p>1.安装git</p>
+<p><code>https://git-scm.com/downloads</code></p>
+<p>2.Git与远程库进行SSH授权(点击查看教程Git的安装-与远程仓库GitHub配置)</p>
+<p>3.安装node.js</p>
+<p><code>https://nodejs.org/en/</code> </p>
+<h2><span id="er-pei-zhi-ben-di-bo-ke">二.配置本地博客</span><a href="#er-pei-zhi-ben-di-bo-ke" class="header-anchor">#</a></h2><p>1.克隆GitHub上保存的hexo网站原文件</p>
+<p><code>git clone 你的仓库地址</code></p>
+<p>2.安装hexo</p>
+<p>进入克隆的目录，执行：</p>
+<p><code>npm install -g hexo-cli</code></p>
+<p>3.生成缺少的网站文件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<h2><span id="san-sheng-cheng-bu-shu">三.生成、部署</span><a href="#san-sheng-cheng-bu-shu" class="header-anchor">#</a></h2><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+]]></content>
       <categories>
-          
-          <category> 技术 </category>
-          
-          <category> Hexo </category>
-          
+        <category>技术</category>
+        <category>Hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>使用hexo搭建个人博客</title>
-      <link href="/2025/05/09/shi-yong-hexo-da-jian-ge-ren-bo-ke/"/>
-      <url>/2025/05/09/shi-yong-hexo-da-jian-ge-ren-bo-ke/</url>
-      
-        <content type="html"><![CDATA[<div class="toc"><!-- toc --><!-- tocstop --><p>&#96;</p><h4><span id="zhong-wen-lian-jie-zhuan-pin-yin-hexo-permalink-pinyin">中文链接转拼音hexo-permalink-pinyin</span><a href="#zhong-wen-lian-jie-zhuan-pin-yin-hexo-permalink-pinyin" class="header-anchor">#</a></h4><p>&#96;&#96;</p><p>修改文档_config.yml添加以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">permalink_pinyin:</span><br><span class="line">  enable: true</span><br><span class="line">  separator: &#x27;-&#x27; # default: &#x27;-&#x27;</span><br></pre></td></tr></table></figure><h4><span id="dai-ma-gao-liang">代码高亮</span><a href="#dai-ma-gao-liang" class="header-anchor">#</a></h4><p>&#96;&#96;</p><p>修改文档_config.yml添加以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">prism_plugin:</span><br><span class="line">  mode: &#x27;preprocess&#x27;    # realtime/preprocess</span><br><span class="line">  theme: &#x27;tomorrow&#x27;     #主题选项</span><br><span class="line">  line_number: true    # default false</span><br><span class="line">  custom_css:</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>使用hexo搭建个人博客</title>
+    <url>/2025/05/09/shi-yong-hexo-da-jian-ge-ren-bo-ke/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+
+
+<!-- tocstop -->
+
+<p>&#96;</p>
+<h4><span id="zhong-wen-lian-jie-zhuan-pin-yin-hexo-permalink-pinyin">中文链接转拼音hexo-permalink-pinyin</span><a href="#zhong-wen-lian-jie-zhuan-pin-yin-hexo-permalink-pinyin" class="header-anchor">#</a></h4><p>&#96;&#96;</p>
+<p>修改文档_config.yml添加以下内容</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">permalink_pinyin:</span><br><span class="line">  enable: true</span><br><span class="line">  separator: &#x27;-&#x27; # default: &#x27;-&#x27;</span><br></pre></td></tr></table></figure>
+
+<h4><span id="dai-ma-gao-liang">代码高亮</span><a href="#dai-ma-gao-liang" class="header-anchor">#</a></h4><p>&#96;&#96;</p>
+<p>修改文档_config.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">prism_plugin:</span><br><span class="line">  mode: &#x27;preprocess&#x27;    # realtime/preprocess</span><br><span class="line">  theme: &#x27;tomorrow&#x27;     #主题选项</span><br><span class="line">  line_number: true    # default false</span><br><span class="line">  custom_css:</span><br></pre></td></tr></table></figure>]]></content>
       <categories>
-          
-          <category> 技术 </category>
-          
-          <category> Hexo </category>
-          
+        <category>技术</category>
+        <category>Hexo</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> github </tag>
-            
-            <tag> 博客 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2025/05/09/hello-world/"/>
-      <url>/2025/05/09/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2><span id="quick-start">Quick Start</span><a href="#quick-start" class="header-anchor">#</a></h2><h3><span id="create-a-new-post">Create a new post</span><a href="#create-a-new-post" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3><span id="run-server">Run server</span><a href="#run-server" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3><span id="generate-static-files">Generate static files</span><a href="#generate-static-files" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3><span id="deploy-to-remote-sites">Deploy to remote sites</span><a href="#deploy-to-remote-sites" class="header-anchor">#</a></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
-    
-    
-    <entry>
-      <title>C++</title>
-      <link href="/C/index.html"/>
-      <url>/C/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-  
+      <tags>
+        <tag>github</tag>
+        <tag>hexo</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
 </search>
