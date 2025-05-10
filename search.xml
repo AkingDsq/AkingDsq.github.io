@@ -12,6 +12,10 @@
 <li><a href="#yi-pei-zhi-huan-jing">一、配置环境</a></li>
 <li><a href="#er-pei-zhi-ben-di-bo-ke">二.配置本地博客</a></li>
 <li><a href="#san-sheng-cheng-bu-shu">三.生成、部署</a></li>
+<li><a href="#bei-fen">备份</a><ul>
+<li><a href="#ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di">克隆gitHub上面生成的静态文件到本地</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -33,6 +37,17 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install</span><br><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
 <h2><span id="san-sheng-cheng-bu-shu">三.生成、部署</span><a href="#san-sheng-cheng-bu-shu" class="header-anchor">#</a></h2><p><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+<h2><span id="bei-fen">备份</span><a href="#bei-fen" class="header-anchor">#</a></h2><h3><span id="ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di">克隆gitHub上面生成的静态文件到本地</span><a href="#ke-long-github-shang-mian-sheng-cheng-de-jing-tai-wen-jian-dao-ben-di" class="header-anchor">#</a></h3><p><code>git clone https://github.com/你的用户名/你的用户名.github.io.git</code><br>把克隆到本地的文件除了git的文件都删掉</p>
+<p>将之前使用hexo写博客时候的整个目录（所有文件）搬过来。把该忽略的文件忽略了</p>
+<p><code>touch .gitignore</code><br>创建一个叫back的分支</p>
+<p><code>git checkout -b back</code><br>提交复制过来的文件到暂存区</p>
+<p><code>git add --all</code><br>提交</p>
+<p><code>git commit -m &quot;新建分支源文件&quot;</code><br>推送分支到github</p>
+<p><code>git push origin back</code><br>到这里基本上就搞定了，以后再推就可以直接git push了，hexo的操作跟以前一样。</p>
+<p>今后无论什么时候想要在其他电脑上面用hexo写博客，就直接把创建的分支克隆下来，npm install安装依赖之后就可以用了。</p>
+<p>克隆分支的操作</p>
+<p><code>git clone https://github.com/yourname/hexo-test.github.io.git</code></p>
+<p>这样做完了以后，每次写完博客发布之后git push把源文件推到分支上。</p>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -75,7 +90,7 @@
 <p><code>https://git-scm.com/downloads</code></p>
 <p>Node.js下载地址:</p>
 <p><code>https://nodejs.org/en/</code> </p>
-<p><img src="/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Node.png" alt="Node"></p>
+<p><img src="/2025/05/09/shi-yong-hexo-da-jian-ge-ren-bo-ke/Node.png" alt="Node"></p>
 <p>在本地建立一个文件夹，我的文件夹为D:github&#x2F;hexotest。 </p>
 <p>接下来可以进入这个文件夹右键Git Bash 或者通过命令号cmd进入这个文件夹 </p>
 <p>输入如下命令： </p>
