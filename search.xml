@@ -1,6 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1.socket的监听与连接</title>
+    <url>/2025/05/10/1-socket-de-jian-ting-yu-lian-jie/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+# 1.socket的监听与连接
+
+
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>c++</category>
+        <category>网络编程</category>
+      </categories>
+      <tags>
+        <tag>网络编程</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>0.VS配置C++_bost库</title>
+    <url>/2025/05/10/0-vs-pei-zhi-c-bost-ku/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#0-vs-pei-zhi-c-bost-ku">0.VS配置C++_bost库</a></li>
+</ul>
+<!-- tocstop -->
+
+</div>
+# 0.VS配置C++_bost库
+]]></content>
+      <categories>
+        <category>技术</category>
+        <category>c++</category>
+        <category>网络编程</category>
+      </categories>
+      <tags>
+        <tag>网络编程</tag>
+        <tag>c++</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>c++基础</title>
     <url>/2025/05/10/c-ji-chu/</url>
     <content><![CDATA[<div class="toc">
@@ -25,20 +77,6 @@
       </categories>
       <tags>
         <tag>c++</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>1.socket的监听与连接</title>
-    <url>/2025/05/10/1-socket-de-jian-ting-yu-lian-jie/</url>
-    <content><![CDATA[<h1><span id="1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</span><a href="#1-socket-de-jian-ting-yu-lian-jie" class="header-anchor">#</a></h1>]]></content>
-      <categories>
-        <category>技术</category>
-        <category>c++</category>
-        <category>网络编程</category>
-      </categories>
-      <tags>
-        <tag>c++</tag>
-        <tag>网络编程</tag>
       </tags>
   </entry>
   <entry>
