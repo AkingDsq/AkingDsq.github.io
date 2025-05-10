@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> github </tag>
+            
+            <tag> hexo </tag>
             
         </tags>
       
@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> hexo </tag>
-            
             <tag> github </tag>
+            
+            <tag> hexo </tag>
             
             <tag> 博客 </tag>
             
@@ -80,9 +80,9 @@
     
     
     <entry>
-      <title>about</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>C++</title>
+      <link href="/C/index.html"/>
+      <url>/C/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -102,9 +102,9 @@
     
     
     <entry>
-      <title>C++</title>
-      <link href="/C/index.html"/>
-      <url>/C/index.html</url>
+      <title>about</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
