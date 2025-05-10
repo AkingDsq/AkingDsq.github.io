@@ -9,6 +9,7 @@ categories:
 tags:
 - github
 - hexo
+comments: true
 ---
 <!-- toc -->
 

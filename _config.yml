@@ -110,7 +110,7 @@ deploy:
 # hexo-admin authentification
 admin:
   username: AKingDsq
-  password_hash: $2a$10$z323S1beWmUQ4c7WAR5O0.EuVdlh7DFQYCz0Klmdo8DQMTCUB8sLm
+  password_hash: 
   secret: 18079463112
 
 plugins:
@@ -121,6 +121,10 @@ plugins:
   - hexo-permalink-pinyin
   - hexo-wordcount
   - hexo-generator-searchdb
+
+# 加速hexo-offline-popup
+offline_popup:
+enable: true
 
 # hexo-toc 插件
 toc:
