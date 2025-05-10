@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1.socket的监听与连接</title>
-    <url>/2025/05/10/1-socket-de-jian-ting-yu-lian-jie/</url>
-    <content><![CDATA[<div class="toc">
-
-<!-- toc -->
-
-<ul>
-<li><a href="#1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</a></li>
-</ul>
-<!-- tocstop -->
-
-</div>
-# 1.socket的监听与连接
-
-
-]]></content>
-      <categories>
-        <category>技术</category>
-        <category>c++</category>
-        <category>网络编程</category>
-      </categories>
-      <tags>
-        <tag>网络编程</tag>
-        <tag>c++</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>0.VS配置C++_bost库</title>
     <url>/2025/05/10/0-vs-pei-zhi-c-bost-ku/</url>
     <content><![CDATA[<div class="toc">
@@ -53,29 +26,29 @@
       </tags>
   </entry>
   <entry>
-    <title>c++基础</title>
-    <url>/2025/05/10/c-ji-chu/</url>
+    <title>1.socket的监听与连接</title>
+    <url>/2025/05/10/1-socket-de-jian-ting-yu-lian-jie/</url>
     <content><![CDATA[<div class="toc">
 
 <!-- toc -->
 
 <ul>
-<li><a href="#c-ji-chu">c++基础</a><ul>
-<li><a href="#c">c</a></li>
-</ul>
-</li>
+<li><a href="#1-socket-de-jian-ting-yu-lian-jie">1.socket的监听与连接</a></li>
 </ul>
 <!-- tocstop -->
 
 </div>
+# 1.socket的监听与连接
 
-<h1><span id="c-ji-chu">c++基础</span><a href="#c-ji-chu" class="header-anchor">#</a></h1><h2><span id="c">c</span><a href="#c" class="header-anchor">#</a></h2>]]></content>
+
+]]></content>
       <categories>
         <category>技术</category>
         <category>c++</category>
-        <category>c++语法</category>
+        <category>网络编程</category>
       </categories>
       <tags>
+        <tag>网络编程</tag>
         <tag>c++</tag>
       </tags>
   </entry>
@@ -135,6 +108,33 @@
       <tags>
         <tag>github</tag>
         <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>c++基础</title>
+    <url>/2025/05/10/c-ji-chu/</url>
+    <content><![CDATA[<div class="toc">
+
+<!-- toc -->
+
+<ul>
+<li><a href="#c-ji-chu">c++基础</a><ul>
+<li><a href="#c">c</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+</div>
+
+<h1><span id="c-ji-chu">c++基础</span><a href="#c-ji-chu" class="header-anchor">#</a></h1><h2><span id="c">c</span><a href="#c" class="header-anchor">#</a></h2>]]></content>
+      <categories>
+        <category>技术</category>
+        <category>c++</category>
+        <category>c++语法</category>
+      </categories>
+      <tags>
+        <tag>c++</tag>
       </tags>
   </entry>
   <entry>
