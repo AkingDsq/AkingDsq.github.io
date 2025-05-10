@@ -90,7 +90,7 @@
 <p><code>https://git-scm.com/downloads</code></p>
 <p>Node.js下载地址:</p>
 <p><code>https://nodejs.org/en/</code> </p>
-<p><img src="/2025/05/09/shi-yong-hexo-da-jian-ge-ren-bo-ke/Node.png" alt="Node"></p>
+<p><img src="/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/Node.png" alt="Node"></p>
 <p>在本地建立一个文件夹，我的文件夹为D:github&#x2F;hexotest。 </p>
 <p>接下来可以进入这个文件夹右键Git Bash 或者通过命令号cmd进入这个文件夹 </p>
 <p>输入如下命令： </p>
