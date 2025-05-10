@@ -79,7 +79,8 @@
 
 <h4><span id="dai-ma-gao-liang">代码高亮</span><a href="#dai-ma-gao-liang" class="header-anchor">#</a></h4><p>&#96;&#96;</p>
 <p>修改文档_config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">prism_plugin:</span><br><span class="line">  mode: &#x27;preprocess&#x27;    # realtime/preprocess</span><br><span class="line">  theme: &#x27;tomorrow&#x27;     #主题选项</span><br><span class="line">  line_number: true    # default false</span><br><span class="line">  custom_css:</span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">prism_plugin:</span><br><span class="line">  mode: &#x27;preprocess&#x27;    # realtime/preprocess</span><br><span class="line">  theme: &#x27;tomorrow&#x27;     #主题选项</span><br><span class="line">  line_number: true    # default false</span><br><span class="line">  custom_css:</span><br></pre></td></tr></table></figure>
+]]></content>
       <categories>
         <category>技术</category>
         <category>Hexo</category>
